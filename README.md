@@ -26,7 +26,7 @@ Back End
 * Firebase
 	* Authentication
 	* Cloud firestore
-	*Cloud messaging
+	* Cloud messaging
 
   
 >>>>>>> d09d15deb0497393ea459f8421547866936789ff
