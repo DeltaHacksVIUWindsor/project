@@ -14,11 +14,12 @@
     <meta property="og:type" content="website" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
   
   </head>
   <body class="markup">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#"><img src="ourlogo.png" height="60px" style="padding-right: 15px">UpHelping</a>
+      <a class="navbar-brand animated infinite pulse slow" href="#"><img src="ourlogo.png" height="60px" style="padding-right: 15px">UpHelping</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -55,7 +56,7 @@
     </nav>
 
 
-    <div class="container">
+    <div class="container wow fadeIn delay-1s">
       </br></br></br><br><br></br><br><br>
       <div class="row">
         <div class="col-md-2"></div>
@@ -66,10 +67,10 @@
         </div>
       </div>
     </div>
-    <br id="mission"><br><br><br><br>
+    <br id="mission"><br><br><br><br></br></br></br>
 
-    <div class="container">
-      </br></br></br>
+
+    <div class="container wow fadeIn delay-1s">
       <div class="row">
         <div class="col-md-3"></div>
         <div class="col-md-6">
@@ -83,7 +84,7 @@
     </div>
 
 <br><br><br><br><br><br><br id ="contact"><br><br><br>
-    <div class="container">
+    <div class="container wow fadeIn delay-1s">
       <br><br><br>
       <div class="row">
         <div class="col-md-3"></div>
@@ -95,7 +96,7 @@
       </div>
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br>
-    <p class="center small">~UpHelp 2020~</p>
+    <p class="center small animated infinite pulse slow">~UpHelp 2020~</p>
 
 
 
@@ -110,5 +111,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <script>
+        var wow = new WOW(
+      {
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       0,          // distance to the element when triggering the animation (default is 0)
+        mobile:       true,       // trigger animations on mobile devices (default is true)
+        live:         true,       // act on asynchronously loaded content (default is true)
+        callback:     function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      }
+    );
+    wow.init();  
+    </script>  
   </body>
 </html>
