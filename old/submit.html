@@ -1,0 +1,162 @@
+<!doctype html>
+<!-- https://getbootstrap.com/docs/4.4/components/alerts/ -->
+
+<html>
+  <head>
+    <title>UpHelping</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:site_name" content="UpHelping" />
+    <meta property="og:title" content="Homeless Access Services" />
+    <meta property="og:description" content="Connecting the less fortunate with the resources they need to turn their life around" />
+    <meta property="og:image" content="me.png" />
+    <meta property="og:type" content="website" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+  
+  </head>
+  <body class="markup">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="ourlogo.png" height="60px" style="padding-right: 15px">UpHelping</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="shelters.html">Shelters</a>
+              <a class="dropdown-item" href="adhc.html">Addiction</a>
+              <!-- <a class="dropdown-item" href="#">Education</a> -->
+              <!-- <a class="dropdown-item" href="#">Resources for Women</a> -->
+              <a class="dropdown-item" href="crisis.html">Crisis</a>
+              <a class="dropdown-item" href="board.html">Community Board</a>
+              <a class="dropdown-item" href="submit.html">Submit a Resource</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container wow fadeIn delayed">
+      </br></br></br><br><br></br><br><br>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <h1 class="center">Submit a Resource</h1>
+          <p class="center">Use this space to post a resource that you believe will be helpful to the community. To create a post, simply add a short title for it and a brief description of it. Please do not make the description too long, and do note that the input will not recognize any line breaks that you enter.</p>
+          
+
+          
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Title</label>
+              <input type="text" class="form-control" id="title" placeholder="Enter Title Here">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Description</label>
+              <textarea class="form-control" id="desc" rows="4" placeholder="Enter Description Here"></textarea>
+            </div>
+            <p class="center"><button class="btn btn-outline-secondary animated infinite slow pulse" onclick="submit()">Submit</button></p>
+          
+
+
+
+        </div>
+      </div>
+    </div>
+ 
+    <br><br><br><br><br><br><br><br><br><br>
+    <p class="center small wow fadeIn ">UpHelping 2020</p>
+
+
+
+
+
+
+
+
+
+     <!--Scripts: DO NOT TOUCH!-->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <script>
+        var wow = new WOW(
+      {
+        boxClass:     'wow',      // animated element css class (default is wow)
+        animateClass: 'animated', // animation css class (default is animated)
+        offset:       0,          // distance to the element when triggering the animation (default is 0)
+        mobile:       true,       // trigger animations on mobile devices (default is true)
+        live:         true,       // act on asynchronously loaded content (default is true)
+        callback:     function(box) {
+          // the callback is fired every time an animation is started
+          // the argument that is passed in is the DOM node being animated
+        },
+        scrollContainer: null // optional scroll container selector, otherwise use window
+      }
+    );
+    wow.init();  
+    </script>  
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDg77Xo_rffczrVHH2J5MJ1e3Wmy900C3Y",
+        authDomain: "uphelping-6aa09.firebaseapp.com",
+        databaseURL: "https://uphelping-6aa09.firebaseio.com",
+        projectId: "uphelping-6aa09",
+        storageBucket: "uphelping-6aa09.appspot.com",
+        messagingSenderId: "188380980204",
+        appId: "1:188380980204:web:b21ad18362e956afae96c9",
+        measurementId: "G-TEWHQESB1Y"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+      var db = firebase.firestore();
+      function submit(){
+        var x = document.getElementById("title").value;
+        var y = document.getElementById("desc").value;
+        
+        db.collection("articles").add({
+          title: x,
+          body: y,
+          verified: 0
+        })
+        .then(function(docRef) {
+          console.log("Document written with ID: ", docRef.id);
+        })
+        .catch(function(error) {
+          console.error("Error adding document: ", error);
+        });
+        alert("Thank you for submitting a response!");
+      }
+
+    </script>
+
+
+
+  </body>
+</html>
