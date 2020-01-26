@@ -17,4 +17,5 @@ Users may:
 * HTML, CSS
 * Bootstrap
 * Google maps api
+* Firebase
 * flutter
