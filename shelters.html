@@ -3,6 +3,15 @@
 
 <head>
   <title>Shelter Finder</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:site_name" content="UpHelping" />
+  <meta property="og:title" content="Homeless Access Services" />
+  <meta property="og:description" content="Connecting the less fortunate with the resources they need to turn their life around" />
+  <meta property="og:image" content="me.png" />
+  <meta property="og:type" content="website" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
   <meta charset="utf-8">
   <style>
@@ -62,8 +71,39 @@
 </head>
 
 <body>
-<h2> <em>Shelter Locator </em></h2>
-  <p>Please make sure your location is turned on.&nbsp; &nbsp;</p>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="ourlogo.png" height="60px" style="padding-right: 15px">UpHelping</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="donate.html">Donate</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Resources
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="shelters.html">Shelters</a>
+              <a class="dropdown-item" href="adhc.html">Addiction</a>
+              <!-- <a class="dropdown-item" href="#">Education</a> -->
+              <!-- <a class="dropdown-item" href="#">Resources for Women</a> -->
+              <a class="dropdown-item" href="crisis.html">Crisis</a>
+              <a class="dropdown-item" href="board.html">Community Board</a>
+              <a class="dropdown-item" href="submit.html">Submit a Resource</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <br><br><br><br>
+<h2 class="center">Shelter Locator</h2>
+<p class="center">Please make sure your location is turned on.&nbsp; &nbsp;</p>
 <div id="panel"></div>
 
   <!-- Map appears here -->
@@ -263,6 +303,10 @@
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhAiVwL8EPeHeGu4uaYQaTAuc62ietrbk&libraries=places&callback=initMap">
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <script 
 </body>
 
 </html>
