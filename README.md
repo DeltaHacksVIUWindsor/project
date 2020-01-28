@@ -7,14 +7,14 @@ An application that helps connect the homeless with relevant resources based on 
 
 ## Functionality
 Users may:
-* find local homeless shelters
-* find education resources
-* find free resources
-* connect with those who would like to help
+* Find local homeless shelters
+* Find education resources
+* Find free resources
+* Connect with those who would like to help
 
 
 ## Technologies Used
 * HTML, CSS
 * Bootstrap
 * Google maps api
-* flutter
+* Flutter
